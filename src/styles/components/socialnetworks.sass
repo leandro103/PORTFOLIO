@@ -1,0 +1,38 @@
+@use '../variables'
+@use '../mixins'
+
+#social-networks
+  @include mixins.center
+  gap: 1rem
+  margin: 1rem 0
+
+  .social-btn
+    padding: .6rem
+    background-color: variables.$bg-color-secondary
+    border-radius: variables.$card-border-radius
+    font-size: 1.3rem
+    @include mixins.center
+
+    &:hover
+        background: variables.$gradient// Muda a cor do fundo ao passar o mouse
+
+    svg // Altera a cor do ícone
+        color: variables.$text-color
+
+#linkedin
+    color:  #0072B1
+
+#github
+    color: #111
+
+#instagram
+    color: #bc2a8d
+
+
+    
+       
+    
+    
+        
+
+    
